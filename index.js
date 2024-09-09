@@ -54,6 +54,7 @@ $(".btn").click(function() {
    // Open the rules modal when "Rules" button is clicked
    $("#rules-btn").click(function() {
      $("#rules-modal").show();
+     console.log("working");
    });
 
    // Close the modal when "X" is clicked
