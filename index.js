@@ -51,6 +51,23 @@ $(".btn").click(function() {
 
    });
 
+   // Open the rules modal when "Rules" button is clicked
+   $("#rules-btn").click(function() {
+     $("#rules-modal").show();
+   });
+
+   // Close the modal when "X" is clicked
+   $("#close-modal").click(function() {
+     $("#rules-modal").hide();
+   });
+
+   // Close the modal when anywhere outside of the modal is clicked
+   $(window).click(function(event) {
+     if ($(event.target).is("#rules-modal")) {
+       $("#rules-modal").hide();
+     }
+   });
+
 // Call this function to check the user's answer
 function checkAnswer(currentLevel) {
   // Check if the most recent user answer matches the game pattern
